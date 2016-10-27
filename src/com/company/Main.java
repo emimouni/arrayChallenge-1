@@ -8,19 +8,17 @@ public class Main {
 	int grades [] = new int[1000];
     Scanner input = new Scanner(System.in);
         int grade;
-        int i = 0;
+        int count = 0;
         int sum = 0;
-        int count=0;
     while(true)
     {
         System.out.println("Enter grade or -1");
         grade = input.nextInt();
         if(grade == -1)
             break;
-        grades[i]=grade;
+        grades[count]=grade;
 
-        sum = sum + grades[i];
-        i++;
+        sum = sum + grades[count];
         count++;
     }
 
